@@ -20,3 +20,13 @@ live-server
   "semi": false
 }
 ```
+
+### Build with docker
+- Build
+  ```bash
+  docker build -t gabrielmelogm/petfeliz:latest .
+  ```
+- Run
+  ```bash
+  docker run --rm -p 8080:80 -p 9090:90 gabrielmelogm/petfeliz:latest
+  ```
