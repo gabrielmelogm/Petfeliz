@@ -17,6 +17,6 @@ terraform {
   }
 }
 
-provider "digitalocean" {
-  token = var.token
-}
+# provider "digitalocean" {
+#   token = var.token
+# }
