@@ -1,10 +1,8 @@
 terraform {
-  required_version = "~> 1.5.5"
-
   required_providers {
     digitalocean = {
       source = "digitalocean/digitalocean"
-      version = "~> 2.0"
+      version = "~> 2.17.1"
     }
   }
 
@@ -15,8 +13,10 @@ terraform {
       name = "playground"
     }
   }
+
+  required_version = ">= 0.13.0"
 }
 
-# provider "digitalocean" {
-#   token = var.token
-# }
+provider "digitalocean" {
+  token = var.do_access_token
+}
