@@ -1,2 +1,8 @@
-variable "token" {}
-variable "ssh_keys" {}
+variable "token" {
+  default = ""
+  description = "digital ocean key"
+}
+variable "ssh_keys" {
+  default = ""
+  description = "SSH key"
+}
