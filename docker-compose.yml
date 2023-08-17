@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  webserver:
+    build: .
+    container_name: "petfeliz-webserver"
+    ports:
+      - "80:80"
