@@ -9,9 +9,3 @@ services:
     volumes:
       - ./public:/usr/share/nginx/html/
       - ./health-check.conf/:/etc/nginx/conf.d/health-check.conf
-    networks:
-      - network-webserver
-
-networks:
-  network-webserver:
-    driver: bridge
