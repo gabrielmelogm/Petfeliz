@@ -10,7 +10,7 @@ terraform {
     organization = "gabrielmelo"
 
     workspaces {
-      name = "playground"
+      name = "playground2"
     }
   }
 
