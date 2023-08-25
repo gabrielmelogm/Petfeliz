@@ -56,4 +56,4 @@ jobs:
     needs: build
     steps:
       - name: "Trigger Portainer Deploy"
-        run: curl -X "POST" "${{ secrets.SERVER_URL }}"
+        run: curl -X "POST" "${{secrets.SERVER_URL}}/618ae71c-df19-41f1-a6c7-a6972a01bf7b"
