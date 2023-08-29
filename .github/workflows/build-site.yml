@@ -9,6 +9,7 @@ on:
 
 env:
   IMAGE_NAME: ${{ vars.IMG_NAME }}
+  CONTAINER_ID: ${{ vars.CONTAINER_ID }}
 
 jobs:
 
@@ -56,4 +57,4 @@ jobs:
     needs: build
     steps:
       - name: "Trigger Portainer Deploy"
-        run: curl -X "POST" "${{secrets.SERVER_URL}}/61265466-906a-4bb0-9a36-b131839abadb"
+        run: curl -X "POST" "${{secrets.SERVER_URL}}/${{env.CONTAINER_ID}}"
